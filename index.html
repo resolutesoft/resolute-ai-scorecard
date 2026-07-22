@@ -100,9 +100,7 @@ main{padding:38px 0 20px}
 <input type="email" name="email" placeholder="Work email (not a personal address)" required>
 <button type="submit">Send me the playbook</button>
 </form>
-<div id="emailerr" class="err"></div>
-<p class="note">Wire this to ActiveCampaign: point the form action at your AC hosted-form URL, or paste the AC embed. The check below blocks common free domains in the browser; add the same rule in ActiveCampaign as the real gate.</p>
-<script>
+<div id="emailerr" class="err"></div><script>
 const CONFIG={
   AC_ACTION:"https://resolutesoftware.activehosted.com/proc.php",
   AC_U:"75",
