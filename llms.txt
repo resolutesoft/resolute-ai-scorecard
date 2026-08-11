@@ -1,0 +1,72 @@
+# The Six Controls — A Self-Assessment
+
+> A free, three-minute self-assessment that scores a software team's governance of
+> AI-assisted development across six controls. Published by Resolute Software.
+> No sign-up is required to take the assessment or see the result.
+
+## What this is
+
+An interactive scorecard at https://ai-scorecard.resolutesoftware.com/ for engineering
+leaders, CTOs and heads of software — particularly in regulated industries — who want to
+know whether their team's use of AI coding tools is actually governed, and which gap to
+close first. Score each of the six controls from 1 to 4, for a total out of 24.
+
+## The six controls
+
+1. **Human ownership & sign-off.** A person owns and signs off on every change AI helps
+   write. Ask yourself: could you say who approved a given piece of AI-generated code?
+2. **Model strategy & neutrality.** You stay free to switch AI models instead of locking
+   into one vendor. Ask yourself: if your main AI provider changed its price or terms, how
+   fast could you move?
+3. **Developer platform & tooling.** A defined set of approved AI tools, not a free-for-all.
+   Ask yourself: do you know every AI tool your developers actually use?
+4. **Quality assurance.** More AI-written code means more testing and review, not less.
+   Ask yourself: has your testing kept pace with the extra code AI produces?
+5. **Security & compliance.** Your AI controls are enforced and recorded, so you can show
+   an auditor. Ask yourself: could you show evidence of your AI controls this quarter?
+6. **Data governance.** You decide what data AI tools can see, and you can prove it.
+   Ask yourself: do you know where your prompt data goes and how long it is kept?
+
+## Scoring scale
+
+Each control is scored on a four-level maturity scale:
+
+- **1 — Ad hoc.** No shared practice.
+- **2 — Emerging.** Some practice, inconsistent.
+- **3 — Defined.** Documented and mostly followed.
+- **4 — Governed.** Enforced and evidenced.
+
+Totals out of 24 fall into three bands:
+
+- **Early (6–12).** AI is running ahead of your governance. Close the security, testing and
+  data gaps before an audit or an incident does it for you.
+- **Forming (13–19).** The pieces exist but are not yet consistent or provable. Your
+  exposure sits in the gaps between them.
+- **Governed (20–24).** Ahead of most teams. The work now is keeping it evidenced as your
+  models and people change.
+
+Whatever the total, the lowest-scoring control is where to start.
+
+## Statistics cited, with sources
+
+- More than 80% of developers now use AI to write code. Source: Stack Overflow 2025
+  Developer Survey, https://survey.stackoverflow.co/2025/ai — 84% of 49,000+ respondents
+  use or plan to use AI tools; roughly 80% use them today, and 51% of professional
+  developers use them daily.
+- In 45% of cases, an AI model introduces a known security flaw into the codebase when no
+  security guidance is given. Source: Veracode Spring 2026 GenAI Code Security Update,
+  https://www.veracode.com/blog/spring-2026-genai-code-security/ — 80 coding tasks across
+  Java, JavaScript, C# and Python, evaluated across 150+ models. The security pass rate has
+  stayed near 55% for two years while models improved in other respects.
+
+## Resources
+
+- [The assessment](https://ai-scorecard.resolutesoftware.com/): the interactive scorecard.
+- [The Six Controls playbook](https://ai-scorecard.resolutesoftware.com/six-controls-playbook.pdf):
+  what good looks like for each control, the 2026 data behind them, and the scorecard to
+  bring to your team. Delivered by email in exchange for a work email address.
+
+## Publisher
+
+Resolute Software — senior software consulting for regulated engineering teams.
+https://www.resolutesoftware.com/ · sales@resolutesoftware.com
