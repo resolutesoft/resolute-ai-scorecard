@@ -67,7 +67,7 @@ main{padding:38px 0 20px}
 .err{color:#ffb3bd;font-size:13.5px;margin-top:8px;min-height:16px}
 .foot{color:var(--muted);font-size:13px;padding:26px 0 40px;border-top:1px solid #eee}
 .bars{background:linear-gradient(160deg,#3a1a86,#1c0b52);border-radius:20px;padding:24px 28px;margin:8px 0 24px}
-.bars h3{font-size:13px;letter-spacing:.16em;color:var(--teal);text-transform:uppercase;font-weight:600;margin-bottom:2px}
+.bars .barhead{font-size:13px;letter-spacing:.16em;color:var(--teal);text-transform:uppercase;font-weight:600;margin-bottom:2px}
 .brow{display:flex;align-items:center;gap:16px;margin:14px 0}
 .blab{flex:0 0 46%;font-size:15px;color:var(--cloud)}
 .btrack{flex:1;height:10px;background:rgba(255,255,255,.14);border-radius:6px;overflow:hidden}
@@ -95,7 +95,44 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <p class="dl">Score your team 1 to 4 on each. Your lowest score is where to start.</p>
 </div>
 <p class="legend"><b>Score each control 1 to 4:</b> &nbsp;1 Ad hoc (no shared practice) &nbsp;·&nbsp; 2 Emerging (some, inconsistent) &nbsp;·&nbsp; 3 Defined (documented, mostly followed) &nbsp;·&nbsp; 4 Governed (enforced and evidenced).</p>
-<div id="cards"></div>
+<div id="cards">
+<div class="card" id="card0">
+<div class="chead"><div class="num">01</div><h3 class="ctitle">Human ownership &amp; sign-off</h3></div>
+<p class="pl"><b>Principle.</b> A person owns and signs off on every change AI helps write.</p>
+<p class="ak"><b>Ask yourself.</b> Could you say who approved a given piece of AI-generated code?</p>
+<div class="scale"><button type="button" class="opt" data-c="0" data-v="1"><b>1</b><small>Ad hoc</small></button><button type="button" class="opt" data-c="0" data-v="2"><b>2</b><small>Emerging</small></button><button type="button" class="opt" data-c="0" data-v="3"><b>3</b><small>Defined</small></button><button type="button" class="opt" data-c="0" data-v="4"><b>4</b><small>Governed</small></button></div>
+</div>
+<div class="card" id="card1">
+<div class="chead"><div class="num">02</div><h3 class="ctitle">Model strategy &amp; neutrality</h3></div>
+<p class="pl"><b>Principle.</b> You stay free to switch AI models instead of locking into one vendor.</p>
+<p class="ak"><b>Ask yourself.</b> If your main AI provider changed its price or terms, how fast could you move?</p>
+<div class="scale"><button type="button" class="opt" data-c="1" data-v="1"><b>1</b><small>Ad hoc</small></button><button type="button" class="opt" data-c="1" data-v="2"><b>2</b><small>Emerging</small></button><button type="button" class="opt" data-c="1" data-v="3"><b>3</b><small>Defined</small></button><button type="button" class="opt" data-c="1" data-v="4"><b>4</b><small>Governed</small></button></div>
+</div>
+<div class="card" id="card2">
+<div class="chead"><div class="num">03</div><h3 class="ctitle">Developer platform &amp; tooling</h3></div>
+<p class="pl"><b>Principle.</b> A defined set of approved AI tools, not a free-for-all.</p>
+<p class="ak"><b>Ask yourself.</b> Do you know every AI tool your developers actually use?</p>
+<div class="scale"><button type="button" class="opt" data-c="2" data-v="1"><b>1</b><small>Ad hoc</small></button><button type="button" class="opt" data-c="2" data-v="2"><b>2</b><small>Emerging</small></button><button type="button" class="opt" data-c="2" data-v="3"><b>3</b><small>Defined</small></button><button type="button" class="opt" data-c="2" data-v="4"><b>4</b><small>Governed</small></button></div>
+</div>
+<div class="card" id="card3">
+<div class="chead"><div class="num">04</div><h3 class="ctitle">Quality assurance</h3></div>
+<p class="pl"><b>Principle.</b> More AI-written code means more testing and review, not less.</p>
+<p class="ak"><b>Ask yourself.</b> Has your testing kept pace with the extra code AI produces?</p>
+<div class="scale"><button type="button" class="opt" data-c="3" data-v="1"><b>1</b><small>Ad hoc</small></button><button type="button" class="opt" data-c="3" data-v="2"><b>2</b><small>Emerging</small></button><button type="button" class="opt" data-c="3" data-v="3"><b>3</b><small>Defined</small></button><button type="button" class="opt" data-c="3" data-v="4"><b>4</b><small>Governed</small></button></div>
+</div>
+<div class="card" id="card4">
+<div class="chead"><div class="num">05</div><h3 class="ctitle">Security &amp; compliance</h3></div>
+<p class="pl"><b>Principle.</b> Your AI controls are enforced and recorded, so you can show an auditor.</p>
+<p class="ak"><b>Ask yourself.</b> Could you show evidence of your AI controls this quarter?</p>
+<div class="scale"><button type="button" class="opt" data-c="4" data-v="1"><b>1</b><small>Ad hoc</small></button><button type="button" class="opt" data-c="4" data-v="2"><b>2</b><small>Emerging</small></button><button type="button" class="opt" data-c="4" data-v="3"><b>3</b><small>Defined</small></button><button type="button" class="opt" data-c="4" data-v="4"><b>4</b><small>Governed</small></button></div>
+</div>
+<div class="card" id="card5">
+<div class="chead"><div class="num">06</div><h3 class="ctitle">Data governance</h3></div>
+<p class="pl"><b>Principle.</b> You decide what data AI tools can see, and you can prove it.</p>
+<p class="ak"><b>Ask yourself.</b> Do you know where your prompt data goes and how long it is kept?</p>
+<div class="scale"><button type="button" class="opt" data-c="5" data-v="1"><b>1</b><small>Ad hoc</small></button><button type="button" class="opt" data-c="5" data-v="2"><b>2</b><small>Emerging</small></button><button type="button" class="opt" data-c="5" data-v="3"><b>3</b><small>Defined</small></button><button type="button" class="opt" data-c="5" data-v="4"><b>4</b><small>Governed</small></button></div>
+</div>
+</div>
 <div class="summary"><div class="wrap" style="padding:0">
 <div class="sumrow">
 <div class="score">Your score: <em id="total">0</em> / 24</div>
@@ -104,8 +141,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div id="readout" class="readout"></div>
 </div></div>
 <section class="bars">
-<h3>Control by control</h3>
-<div id="bars"></div>
+<p class="barhead">Control by control</p>
+<div id="bars">
+<div class="brow"><div class="blab">01 Human ownership &amp; sign-off</div><div class="btrack"><div class="bfill" id="bf0"></div></div></div>
+<div class="brow"><div class="blab">02 Model strategy &amp; neutrality</div><div class="btrack"><div class="bfill" id="bf1"></div></div></div>
+<div class="brow"><div class="blab">03 Developer platform &amp; tooling</div><div class="btrack"><div class="bfill" id="bf2"></div></div></div>
+<div class="brow"><div class="blab">04 Quality assurance</div><div class="btrack"><div class="bfill" id="bf3"></div></div></div>
+<div class="brow"><div class="blab">05 Security &amp; compliance</div><div class="btrack"><div class="bfill" id="bf4"></div></div></div>
+<div class="brow"><div class="blab">06 Data governance</div><div class="btrack"><div class="bfill" id="bf5"></div></div></div>
+</div>
 </section>
 <section class="cta">
 <h2>Get the full <span class="t">playbook</span></h2>
@@ -173,28 +217,20 @@ f.addEventListener('submit',function(ev){ev.preventDefault();
 </main>
 <footer class="foot"><div class="wrap">Resolute Software · Senior software consulting for regulated engineering teams · sales@resolutesoftware.com</div></footer>
 <script>
+// The six controls are rendered as static HTML above so that AI crawlers and
+// search engines (which do not execute JavaScript) can read the framework.
+// This array now only carries what the scoring logic needs: the control names
+// for the "lowest control" readout and the bar-fill loop.
 const controls=[
-{n:'01',name:'Human ownership & sign-off',pr:'A person owns and signs off on every change AI helps write.',ask:'Could you say who approved a given piece of AI-generated code?'},
-{n:'02',name:'Model strategy & neutrality',pr:'You stay free to switch AI models instead of locking into one vendor.',ask:'If your main AI provider changed its price or terms, how fast could you move?'},
-{n:'03',name:'Developer platform & tooling',pr:'A defined set of approved AI tools, not a free-for-all.',ask:'Do you know every AI tool your developers actually use?'},
-{n:'04',name:'Quality assurance',pr:'More AI-written code means more testing and review, not less.',ask:'Has your testing kept pace with the extra code AI produces?'},
-{n:'05',name:'Security & compliance',pr:'Your AI controls are enforced and recorded, so you can show an auditor.',ask:'Could you show evidence of your AI controls this quarter?'},
-{n:'06',name:'Data governance',pr:'You decide what data AI tools can see, and you can prove it.',ask:'Do you know where your prompt data goes and how long it is kept?'}
+{n:'01',name:'Human ownership & sign-off'},
+{n:'02',name:'Model strategy & neutrality'},
+{n:'03',name:'Developer platform & tooling'},
+{n:'04',name:'Quality assurance'},
+{n:'05',name:'Security & compliance'},
+{n:'06',name:'Data governance'}
 ];
-const levels=[['1','Ad hoc'],['2','Emerging'],['3','Defined'],['4','Governed']];
 const scores={};
 let _completedFired=false,_startedFired=false;
-const cards=document.getElementById('cards');
-controls.forEach((c,i)=>{
- const card=document.createElement('div');card.className='card';card.id='card'+i;
- card.innerHTML=`<div class="chead"><div class="num">${c.n}</div><div class="ctitle">${c.name}</div></div>
- <p class="pl"><b>Principle.</b> ${c.pr}</p>
- <p class="ak"><b>Ask yourself.</b> ${c.ask}</p>
- <div class="scale">${levels.map((l,j)=>`<button class="opt" data-c="${i}" data-v="${j+1}"><b>${l[0]}</b><small>${l[1]}</small></button>`).join('')}</div>`;
- cards.appendChild(card);
-});
-const bw=document.getElementById('bars');
-controls.forEach((c,i)=>{const r=document.createElement('div');r.className='brow';r.innerHTML='<div class="blab">'+c.n+' '+c.name+'</div><div class="btrack"><div class="bfill" id="bf'+i+'"></div></div>';bw.appendChild(r);});
 document.querySelectorAll('.opt').forEach(b=>b.addEventListener('click',()=>{
  const ci=b.dataset.c;scores[ci]=+b.dataset.v;
  if(!_startedFired){_startedFired=true;(window.dataLayer=window.dataLayer||[]).push({event:'assessment_started'});}
