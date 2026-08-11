@@ -22,6 +22,8 @@ body{font-family:'Poppins',system-ui,sans-serif;color:var(--ink);background:#fff
 .hero h1 .t{color:var(--teal)}
 .rule{width:180px;height:6px;background:var(--teal);border-radius:3px;margin:14px 0 20px}
 .hero .lead{color:var(--cloud);font-size:18px;max-width:660px;margin-bottom:22px}
+.hero .lead a.src{color:#fff;text-decoration:underline;text-decoration-color:rgba(0,255,194,.5);text-underline-offset:3px}
+.hero .lead a.src:hover{text-decoration-color:var(--teal)}
 .btn{display:inline-block;background:var(--teal);color:var(--deep);font-weight:700;text-decoration:none;border-radius:12px;padding:13px 22px;font-size:15px}
 main{padding:38px 0 20px}
 .overview{background:var(--lilac);border-radius:16px;padding:24px 24px;margin:40px 0 30px}
@@ -66,6 +68,9 @@ main{padding:38px 0 20px}
 .cta-help a:hover{text-decoration:underline}
 .err{color:#ffb3bd;font-size:13.5px;margin-top:8px;min-height:16px}
 .foot{color:var(--muted);font-size:13px;padding:26px 0 40px;border-top:1px solid #eee}
+.foot .sources{margin-bottom:12px;line-height:1.6;max-width:760px}
+.foot .sources b{color:var(--deep)}
+.foot a{color:var(--meteor)}
 .bars{background:linear-gradient(160deg,#3a1a86,#1c0b52);border-radius:20px;padding:24px 28px;margin:8px 0 24px}
 .bars .barhead{font-size:13px;letter-spacing:.16em;color:var(--teal);text-transform:uppercase;font-weight:600;margin-bottom:2px}
 .brow{display:flex;align-items:center;gap:16px;margin:14px 0}
@@ -85,7 +90,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="badge">THE SIX CONTROLS &nbsp;·&nbsp; A SELF-ASSESSMENT</div>
 <h1>Is your team's use of <span class="t">AI</span> actually governed?</h1>
 <div class="rule"></div>
-<p class="lead">84% of developers now use AI to write code, and about 45% of what it produces ships with a known security flaw. Score your team on the six controls that tell safe AI-assisted development from risky, in three minutes, and see the one gap to fix first.</p>
+<p class="lead">More than <a class="src" href="https://survey.stackoverflow.co/2025/ai" target="_blank" rel="noopener">80% of developers now use AI to write code</a>, and in <a class="src" href="https://www.veracode.com/blog/spring-2026-genai-code-security/" target="_blank" rel="noopener">45% of cases it introduces a known security flaw</a>. Score your team on the six controls that tell safe AI-assisted development from risky, in three minutes, and see the one gap to fix first.</p>
 <a class="btn" href="#pbform">Get the full playbook</a>
 </div></header>
 <main class="wrap">
@@ -215,7 +220,10 @@ f.addEventListener('submit',function(ev){ev.preventDefault();
 </script>
 </section>
 </main>
-<footer class="foot"><div class="wrap">Resolute Software · Senior software consulting for regulated engineering teams · sales@resolutesoftware.com</div></footer>
+<footer class="foot"><div class="wrap">
+<p class="sources"><b>Sources.</b> AI adoption: <a href="https://survey.stackoverflow.co/2025/ai" target="_blank" rel="noopener">Stack Overflow 2025 Developer Survey</a> (49,000+ respondents; 84% use or plan to use AI tools, ~80% use them today). Insecure code: <a href="https://www.veracode.com/blog/spring-2026-genai-code-security/" target="_blank" rel="noopener">Veracode Spring 2026 GenAI Code Security Update</a> (80 tasks across 4 languages, 150+ models; a known security flaw is introduced in 45% of cases, a pass rate flat for two years).</p>
+<p>Resolute Software · Senior software consulting for regulated engineering teams · sales@resolutesoftware.com</p>
+</div></footer>
 <script>
 // The six controls are rendered as static HTML above so that AI crawlers and
 // search engines (which do not execute JavaScript) can read the framework.
