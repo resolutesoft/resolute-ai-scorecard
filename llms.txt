@@ -51,8 +51,8 @@ Whatever the total, the lowest-scoring control is where to start.
 
 - More than 80% of developers now use AI to write code. Source: Stack Overflow 2025
   Developer Survey, https://survey.stackoverflow.co/2025/ai — 84% of 49,000+ respondents
-  use or plan to use AI tools; roughly 80% use them today, and 51% of professional
-  developers use them daily.
+  use or plan to use AI tools; 80.8% use them today, and 51% of professional developers
+  use them daily.
 - In 45% of cases, an AI model introduces a known security flaw into the codebase when no
   security guidance is given. Source: Veracode Spring 2026 GenAI Code Security Update,
   https://www.veracode.com/blog/spring-2026-genai-code-security/ — 80 coding tasks across
@@ -62,9 +62,10 @@ Whatever the total, the lowest-scoring control is where to start.
 ## Resources
 
 - [The assessment](https://ai-scorecard.resolutesoftware.com/): the interactive scorecard.
-- [The Six Controls playbook](https://ai-scorecard.resolutesoftware.com/six-controls-playbook.pdf):
-  what good looks like for each control, the 2026 data behind them, and the scorecard to
-  bring to your team. Delivered by email in exchange for a work email address.
+- The Six Controls playbook: what good looks like for each control, the 2026 data behind
+  them, and the scorecard to bring to your team. It is a gated resource — request it from
+  the form at https://ai-scorecard.resolutesoftware.com/#pbform and it is delivered by
+  email. Please do not link to or reproduce the PDF file directly.
 
 ## Publisher
 

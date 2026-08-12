@@ -1,62 +1,49 @@
 # https://ai-scorecard.resolutesoftware.com/robots.txt
 # The Six Controls — A Self-Assessment, by Resolute Software.
-# All crawlers welcome, including AI assistants and their training crawlers.
+#
+# All crawlers are welcome, including AI assistants and their training
+# crawlers. The only exclusion is the playbook PDF: it is a gated lead magnet,
+# delivered by email in exchange for a work address, so indexing it would let
+# crawlers serve it directly and bypass the form.
+#
+# Note on structure: a crawler obeys only the most specific user-agent group
+# that matches it, and does NOT inherit rules from "*". Every group below
+# therefore repeats both rules rather than relying on the wildcard.
 
 User-agent: *
 Allow: /
+Disallow: /six-controls-playbook.pdf
 
 # Search engines
 User-agent: Googlebot
-Allow: /
-
 User-agent: Bingbot
+User-agent: Slurp
+User-agent: DuckDuckBot
 Allow: /
+Disallow: /six-controls-playbook.pdf
 
 # AI assistants — live search grounding and answer citation
 User-agent: OAI-SearchBot
-Allow: /
-
 User-agent: ChatGPT-User
-Allow: /
-
 User-agent: PerplexityBot
-Allow: /
-
 User-agent: Perplexity-User
-Allow: /
-
 User-agent: Claude-SearchBot
-Allow: /
-
 User-agent: Claude-User
-Allow: /
-
 User-agent: Google-Extended
-Allow: /
-
 User-agent: Applebot
-Allow: /
-
 User-agent: Applebot-Extended
 Allow: /
+Disallow: /six-controls-playbook.pdf
 
 # AI training crawlers
 User-agent: GPTBot
-Allow: /
-
 User-agent: ClaudeBot
-Allow: /
-
 User-agent: anthropic-ai
-Allow: /
-
 User-agent: CCBot
-Allow: /
-
 User-agent: Amazonbot
-Allow: /
-
 User-agent: Meta-ExternalAgent
+User-agent: Bytespider
 Allow: /
+Disallow: /six-controls-playbook.pdf
 
 Sitemap: https://ai-scorecard.resolutesoftware.com/sitemap.xml

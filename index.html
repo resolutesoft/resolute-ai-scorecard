@@ -87,14 +87,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 "inLanguage":"en",
 "isPartOf":{"@id":"https://ai-scorecard.resolutesoftware.com/#website"},
 "mainEntity":[
-{"@type":"Question","name":"What are the six controls that govern AI-assisted development?","acceptedAnswer":{"@type":"Answer","text":"Six places where AI-assisted development either stays safe or quietly creates risk: human ownership and sign-off, model strategy and neutrality, developer platform and tooling, quality assurance, security and compliance, and data governance. Each is scored 1 to 4, for a total out of 24."}},
-{"@type":"Question","name":"Could you say who approved a given piece of AI-generated code?","acceptedAnswer":{"@type":"Answer","text":"Control 1, human ownership and sign-off. The principle: a person owns and signs off on every change AI helps write. Without named accountability on each change, no other control can be enforced."}},
-{"@type":"Question","name":"If your main AI provider changed its price or terms, how fast could you move?","acceptedAnswer":{"@type":"Answer","text":"Control 2, model strategy and neutrality. The principle: you stay free to switch AI models instead of locking into one vendor."}},
-{"@type":"Question","name":"Do you know every AI tool your developers actually use?","acceptedAnswer":{"@type":"Answer","text":"Control 3, developer platform and tooling. The principle: a defined set of approved AI tools, not a free-for-all."}},
-{"@type":"Question","name":"Has your testing kept pace with the extra code AI produces?","acceptedAnswer":{"@type":"Answer","text":"Control 4, quality assurance. The principle: more AI-written code means more testing and review, not less."}},
-{"@type":"Question","name":"Could you show evidence of your AI controls this quarter?","acceptedAnswer":{"@type":"Answer","text":"Control 5, security and compliance. The principle: your AI controls are enforced and recorded, so you can show an auditor."}},
-{"@type":"Question","name":"Do you know where your prompt data goes and how long it is kept?","acceptedAnswer":{"@type":"Answer","text":"Control 6, data governance. The principle: you decide what data AI tools can see, and you can prove it."}},
-{"@type":"Question","name":"How is the assessment scored?","acceptedAnswer":{"@type":"Answer","text":"Score each of the six controls 1 to 4: 1 Ad hoc (no shared practice), 2 Emerging (some, inconsistent), 3 Defined (documented, mostly followed), 4 Governed (enforced and evidenced). The total falls into one of three bands out of 24: Early (6–12), Forming (13–19) or Governed (20–24). Your lowest-scoring control is where to start."}}
+{"@type":"Question","name":"What are the six controls that govern AI-assisted development?","acceptedAnswer":{"@type":"Answer","text":"Six places where AI-assisted development either stays safe or quietly creates risk: who owns the code, which models you use, your tooling, your testing, security, and your data. Governed well, AI speeds your team up. Left ungoverned, it ships problems faster. Score your team 1 to 4 on each. Your lowest score is where to start."}},
+{"@type":"Question","name":"Could you say who approved a given piece of AI-generated code?","acceptedAnswer":{"@type":"Answer","text":"Control 01, Human ownership & sign-off. Principle: a person owns and signs off on every change AI helps write."}},
+{"@type":"Question","name":"If your main AI provider changed its price or terms, how fast could you move?","acceptedAnswer":{"@type":"Answer","text":"Control 02, Model strategy & neutrality. Principle: you stay free to switch AI models instead of locking into one vendor."}},
+{"@type":"Question","name":"Do you know every AI tool your developers actually use?","acceptedAnswer":{"@type":"Answer","text":"Control 03, Developer platform & tooling. Principle: a defined set of approved AI tools, not a free-for-all."}},
+{"@type":"Question","name":"Has your testing kept pace with the extra code AI produces?","acceptedAnswer":{"@type":"Answer","text":"Control 04, Quality assurance. Principle: more AI-written code means more testing and review, not less."}},
+{"@type":"Question","name":"Could you show evidence of your AI controls this quarter?","acceptedAnswer":{"@type":"Answer","text":"Control 05, Security & compliance. Principle: your AI controls are enforced and recorded, so you can show an auditor."}},
+{"@type":"Question","name":"Do you know where your prompt data goes and how long it is kept?","acceptedAnswer":{"@type":"Answer","text":"Control 06, Data governance. Principle: you decide what data AI tools can see, and you can prove it."}},
+{"@type":"Question","name":"How is the assessment scored?","acceptedAnswer":{"@type":"Answer","text":"Score each control 1 to 4: 1 Ad hoc (no shared practice) · 2 Emerging (some, inconsistent) · 3 Defined (documented, mostly followed) · 4 Governed (enforced and evidenced). Score your team 1 to 4 on each. Your lowest score is where to start."}}
 ]
 }
 ]
@@ -182,7 +182,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="badge">THE SIX CONTROLS &nbsp;·&nbsp; A SELF-ASSESSMENT</div>
 <h1>Is your team's use of <span class="t">AI</span> actually governed?</h1>
 <div class="rule"></div>
-<p class="lead">More than <a class="src" href="https://survey.stackoverflow.co/2025/ai" target="_blank" rel="noopener">80% of developers now use AI to write code</a>, and in <a class="src" href="https://www.veracode.com/blog/spring-2026-genai-code-security/" target="_blank" rel="noopener">45% of cases it introduces a known security flaw</a>. Score your team on the six controls that tell safe AI-assisted development from risky, in three minutes, and see the one gap to fix first.</p>
+<p class="lead">More than <a class="src" href="https://survey.stackoverflow.co/2025/ai" target="_blank" rel="noopener">80% of developers now use AI to write code</a>, and left unguided it <a class="src" href="https://www.veracode.com/blog/spring-2026-genai-code-security/" target="_blank" rel="noopener">introduces a known security flaw in 45% of cases</a>. Score your team on the six controls that tell safe AI-assisted development from risky, in three minutes, and see the one gap to fix first.</p>
 <a class="btn" href="#pbform">Get the full playbook</a>
 </div></header>
 <main class="wrap">
@@ -313,7 +313,7 @@ f.addEventListener('submit',function(ev){ev.preventDefault();
 </section>
 </main>
 <footer class="foot"><div class="wrap">
-<p class="sources"><b>Sources.</b> AI adoption: <a href="https://survey.stackoverflow.co/2025/ai" target="_blank" rel="noopener">Stack Overflow 2025 Developer Survey</a> (49,000+ respondents; 84% use or plan to use AI tools, ~80% use them today). Insecure code: <a href="https://www.veracode.com/blog/spring-2026-genai-code-security/" target="_blank" rel="noopener">Veracode Spring 2026 GenAI Code Security Update</a> (80 tasks across 4 languages, 150+ models; a known security flaw is introduced in 45% of cases, a pass rate flat for two years).</p>
+<p class="sources"><b>Sources.</b> AI adoption: <a href="https://survey.stackoverflow.co/2025/ai" target="_blank" rel="noopener">Stack Overflow 2025 Developer Survey</a> (49,000+ respondents; 84% use or plan to use AI tools, 80.8% use them today, 51% of professional developers daily). Insecure code: <a href="https://www.veracode.com/blog/spring-2026-genai-code-security/" target="_blank" rel="noopener">Veracode Spring 2026 GenAI Code Security Update</a> (80 tasks across 4 languages, 150+ models; where no security guidance is given, a known security flaw is introduced in 45% of cases — a pass rate flat for two years).</p>
 <p>Resolute Software · Senior software consulting for regulated engineering teams · sales@resolutesoftware.com</p>
 </div></footer>
 <script>
