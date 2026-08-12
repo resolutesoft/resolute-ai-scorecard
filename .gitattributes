@@ -1,0 +1,5 @@
+# Keep asset bytes identical across platforms; do not convert line endings.
+*.svg -text
+*.ico binary
+*.png binary
+*.pdf binary
